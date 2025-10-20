@@ -277,7 +277,7 @@ if menu == "🚀 Overview Data":
     with col1:
         st.metric("Responden Merasa Lebih Disiplin", "85%")
     with col2:
-        st.metric("Peningkatan Keaktifan Organisasi", "78%")
+        st.metric("Peningkatan Keaktifan Akademik & Non-Akademik", "78%")
 
 elif menu == "📈 Visualisasi & Hasil Analisis":
     if vis_choice == "📊 Dampak OSADA terhadap Kedisiplinan":
@@ -667,4 +667,5 @@ elif menu == "🧩 Kesimpulan":
 
         Keaktifan organisasi yang tumbuh pasca-OSADA memperkaya pengalaman mahasiswa di luar ruang kuliah, menciptakan lulusan yang lebih seimbang antara hard skills dan soft skills. Transformasi yang terjadi membuktikan bahwa program orientasi yang terstruktur dengan baik dapat menjadi investasi jangka panjang dalam membentuk karakter dan kompetensi mahasiswa.
         """)
+
 

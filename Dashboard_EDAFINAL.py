@@ -234,7 +234,7 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.markdown("Gunakan menu di atas untuk navigasi antar halaman dashboard.")
 st.sidebar.markdown("---")
-st.sidebar.markdown("<div style='text-align:justify;'>Dibuat oleh: <b>Tim Analisis OSADA - © 2024 Kelompok robloxmania 📊</b></div>", unsafe_allow_html=True)
+st.sidebar.markdown("<div style='text-align:justify;'>Dibuat oleh: <b>Tim Analisis OSADA - © 2025 Kelompok robloxmania 📊</b></div>", unsafe_allow_html=True)
 
 # ======================
 # Fungsi bantu
@@ -667,5 +667,6 @@ elif menu == "🧩 Kesimpulan":
 
         Keaktifan organisasi yang tumbuh pasca-OSADA memperkaya pengalaman mahasiswa di luar ruang kuliah, menciptakan lulusan yang lebih seimbang antara hard skills dan soft skills. Transformasi yang terjadi membuktikan bahwa program orientasi yang terstruktur dengan baik dapat menjadi investasi jangka panjang dalam membentuk karakter dan kompetensi mahasiswa.
         """)
+
 
 

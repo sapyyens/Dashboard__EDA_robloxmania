@@ -74,7 +74,6 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-
 # ======================
 # Header & Pembuka
 # ======================
@@ -254,32 +253,6 @@ def tampilkan_grafik_dengan_interpretasi(fig, text, key):
 # Konten Halaman
 # ======================
 # === Kotak Persentase Berwarna di Sidebar ===
-    st.sidebar.markdown('''
-    <div style="
-        background-color:#0096C7;
-        padding:12px;
-        border-radius:12px;
-        text-align:center;
-         color:white;
-         font-weight:bold;
-        font-size:18px;
-        margin-bottom:10px;">
-        💪 Disiplin Meningkat<br><span style='font-size:24px;'>85%</span>
-    </div>
-
-    <div style="
-        background-color:#00B4D8;
-        padding:12px;
-        border-radius:12px;
-        text-align:center;
-        color:white;
-        font-weight:bold;
-        font-size:18px;
-        margin-bottom:10px;">
-        🔥 Keaktifan Naik<br><span style='font-size:24px;'>78%</span>
-    </div>
-    ''', unsafe_allow_html=True)
-
 if menu == "🚀 Overview Data":
     st.title("🎯 Dashboard Analisis Dampak OSADA")
     st.markdown("""
@@ -287,6 +260,7 @@ if menu == "🚀 Overview Data":
     
     OSADA (Orientasi Sains Data I) adalah kegiatan pengenalan kehidupan kampus bagi mahasiswa baru yang bertujuan memberikan informasi seputar sistem perkuliahan, dosen, organisasi mahasiswa, serta nilai-nilai dasar program studi. Melalui OSADA, mahasiswa baru diharapkan siap menjalani perkuliahan dan aktif berkontribusi di lingkungan kampus.
 
+    
     ### Insight Utama:
     
     Berdasarkan analisis data responden, OSADA telah membuktikan dampak positif yang signifikan terhadap pengembangan diri mahasiswa. **85,2% mahasiswa** melaporkan peningkatan kedisiplinan setelah mengikuti program ini, sementara **68,2% merasa lebih aktif** dalam berbagai kegiatan akademik maupun non-akademik di kampus.
@@ -300,6 +274,55 @@ if menu == "🚀 Overview Data":
     Secara keseluruhan, OSADA berhasil menciptakan transformasi melalui pembentukan kebiasaan disiplin, peningkatan kepercayaan diri, dan penguatan komitmen mahasiswa—menjadikannya fondasi yang kokoh untuk kesuksesan akademik dan pengembangan diri selama masa studi.
     """)
 
+        # Kotak berwarna persentase (card style)
+    st.markdown("""
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+        <div style="
+            background-color:#0096C7;
+            flex:1;
+            min-width:250px;
+            padding:16px;
+            border-radius:16px;
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+            💪 Disiplin Meningkat<br>
+            <span style='font-size:28px;'>85%</span>
+        </div>
+
+        <div style="
+            background-color:#00B4D8;
+            flex:1;
+            min-width:250px;
+            padding:16px;
+            border-radius:16px;
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+            🔥 Keaktifan Naik<br>
+            <span style='font-size:28px;'>78%</span>
+        </div>
+
+        <div style="
+            background-color:#48CAE4;
+            flex:1;
+            min-width:250px;
+            padding:16px;
+            border-radius:16px;
+            text-align:center;
+            color:white;
+            font-weight:bold;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+            📈 Pengembangan Diri<br>
+            <span style='font-size:28px;'>82%</span>
+        </div>
+
+    </div>
+    """, unsafe_allow_html=True)
+    
     col1, col2 = st.columns(2)
     with col1:
         st.metric("Responden Merasa Lebih Disiplin", "85%")
@@ -694,6 +717,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 

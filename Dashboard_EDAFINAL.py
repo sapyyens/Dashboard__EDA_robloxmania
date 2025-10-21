@@ -275,35 +275,10 @@ if menu == "🚀 Overview Data":
     """)
 
     col1, col2 = st.columns(2)
-    
-    with col1:
-        st.markdown(
-            """
-            <div style="background-color: #e8f4fd; padding: 20px; border-radius: 10px; border-left: 5px solid #2196F3; text-align: center;">
-                <h3 style="color: #1976D2; margin: 0;">Responden Merasa Lebih Disiplin</h3>
-                <h1 style="color: #1976D2; font-size: 48px; margin: 10px 0;">85%</h1>
-                <p style="color: #666; margin: 0;">Peningkatan signifikan dalam kedisiplinan</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    
-    with col2:
-        st.markdown(
-            """
-            <div style="background-color: #e8f5e8; padding: 20px; border-radius: 10px; border-left: 5px solid #4CAF50; text-align: center;">
-                <h3 style="color: #2E7D32; margin: 0;">Peningkatan Keaktifan Akademik & Non-Akademik</h3>
-                <h1 style="color: #2E7D32; font-size: 48px; margin: 10px 0;">68%</h1>
-                <p style="color: #666; margin: 0;">Lebih aktif dalam kegiatan kampus</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        
     with col1:
         st.metric("Responden Merasa Lebih Disiplin", "85%")
     with col2:
-        st.metric("Peningkatan Keaktifan Akademik & Non-Akademik", "68%")
+        st.metric("Responden Merasa Lebih Aktif Secara Akademik & Non-Akademik", "68%")
 
 elif menu == "📈 Visualisasi & Hasil Analisis":
     if vis_choice == "📊 Dampak OSADA terhadap Kedisiplinan":
@@ -693,6 +668,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 

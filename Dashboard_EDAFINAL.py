@@ -257,6 +257,33 @@ if menu == "🚀 Overview Data":
     st.title("🎯 Dashboard Analisis Dampak OSADA")
     st.markdown("""
     ### Selamat Datang di Dashboard Analisis OSADA!
+
+        # === Kotak Persentase Berwarna di Sidebar ===
+    st.sidebar.markdown("""
+    <div style="
+        background-color:#0096C7;
+        padding:12px;
+        border-radius:12px;
+        text-align:center;
+        color:white;
+        font-weight:bold;
+        font-size:18px;
+        margin-bottom:10px;">
+        💪 Disiplin Meningkat<br><span style='font-size:24px;'>85%</span>
+    </div>
+
+    <div style="
+        background-color:#00B4D8;
+        padding:12px;
+        border-radius:12px;
+        text-align:center;
+        color:white;
+        font-weight:bold;
+        font-size:18px;
+        margin-bottom:10px;">
+        🔥 Keaktifan Naik<br><span style='font-size:24px;'>78%</span>
+    </div>
+    """, unsafe_allow_html=True)
     
     OSADA (Orientasi Sains Data I) adalah kegiatan pengenalan kehidupan kampus bagi mahasiswa baru yang bertujuan memberikan informasi seputar sistem perkuliahan, dosen, organisasi mahasiswa, serta nilai-nilai dasar program studi. Melalui OSADA, mahasiswa baru diharapkan siap menjalani perkuliahan dan aktif berkontribusi di lingkungan kampus.
 
@@ -667,6 +694,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 

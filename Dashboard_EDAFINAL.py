@@ -277,7 +277,7 @@ if menu == "🚀 Overview Data":
     with col1:
         st.metric("Responden Merasa Lebih Disiplin", "85%")
     with col2:
-        st.metric("Peningkatan Keaktifan Akademik & Non-Akademik", "78%")
+        st.metric("Peningkatan Keaktifan Akademik & Non-Akademik", "68%")
 
 elif menu == "📈 Visualisasi & Hasil Analisis":
     if vis_choice == "📊 Dampak OSADA terhadap Kedisiplinan":
@@ -667,6 +667,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 

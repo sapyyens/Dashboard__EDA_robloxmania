@@ -262,7 +262,7 @@ if menu == "🚀 Overview Data":
 
     ### Insight Utama:
     
-    Berdasarkan analisis data responden, OSADA telah membuktikan dampak positif yang signifikan terhadap pengembangan diri mahasiswa. **85% mahasiswa** melaporkan peningkatan kedisiplinan setelah mengikuti program ini, sementara **78% merasa lebih aktif** dalam berbagai kegiatan akademik maupun non-akademik di kampus.
+    Berdasarkan analisis data responden, OSADA telah membuktikan dampak positif yang signifikan terhadap pengembangan diri mahasiswa. **85,2% mahasiswa** melaporkan peningkatan kedisiplinan setelah mengikuti program ini, sementara **68,2% merasa lebih aktif** dalam berbagai kegiatan akademik maupun non-akademik di kampus.
 
     Yang menarik, kegiatan berbasis kolaborasi seperti **kerja kelompok dan studi kasus** terbukti paling efektif dalam mendukung pengembangan diri mahasiswa. Analisis lebih lanjut menunjukkan bahwa mahasiswa yang menghabiskan **1-5 jam per minggu** untuk OSADA mengalami peningkatan kedisiplinan paling optimal.
 
@@ -293,7 +293,7 @@ elif menu == "📈 Visualisasi & Hasil Analisis":
             data = df_cat[col_name].value_counts().reset_index()
             data.columns = ['Kategori', 'Jumlah']
             fig = px.pie(data, names='Kategori', values='Jumlah', color='Kategori', title="Distribusi Persepsi Kedisiplinan Mahasiswa", color_discrete_map=color_discrete_map)
-            tampilkan_grafik_dengan_interpretasi(fig, "Terlihat dari grafik lingkaran di sebelah, sebagian besar responden menilai OSADA meningkatkan kedisiplinan mereka. Sebanyak 85% responden (total jawaban **sangat membantu** dan **membantu**) merasa lebih disiplin setelah mengikuti OSADA. Ini membuktikan bahwa OSADA membawa dampak positif terhadap kedisiplinan mahasiswa.", key="pie_kedisiplinan")
+            tampilkan_grafik_dengan_interpretasi(fig, "Terlihat dari grafik lingkaran di sebelah, sebagian besar responden menilai OSADA meningkatkan kedisiplinan mereka. Sebanyak 85,7% responden (total jawaban **sangat membantu** dan **membantu**) merasa lebih disiplin setelah mengikuti OSADA. Ini membuktikan bahwa OSADA membawa dampak positif terhadap kedisiplinan mahasiswa.", key="pie_kedisiplinan")
 
             if 'angkatan' in df_cat.columns:
                 freq = df_cat.groupby([col_name, 'angkatan']).size().reset_index(name='jumlah')
@@ -347,7 +347,7 @@ elif menu == "📈 Visualisasi & Hasil Analisis":
             data = df_cat[col_name].value_counts().reset_index()
             data.columns = ['Status', 'Jumlah']
             fig = px.pie(data, names='Status', values='Jumlah', color='Status', title="Persepsi Keaktifan Setelah Mengikuti OSADA", color_discrete_map=color_discrete_map3)
-            tampilkan_grafik_dengan_interpretasi(fig, "Terlihat dari grafik lingkaran di sebelah, sebanyak 78% responden menyatakan merasa aktif dan sangat aktif dalam kegiatan akademik maupun non-akademik setelah mengikuti OSADA. Hanya 22% yang merasa tidak mengalami perubahan signifikan. Data ini membuktikan bahwa OSADA berhasil memotivasi mahasiswa untuk lebih berpartisipasi dalam berbagai kegiatan kampus.", key="pie_keaktifan")
+            tampilkan_grafik_dengan_interpretasi(fig, "Terlihat dari grafik lingkaran di sebelah, sebanyak 68,2% responden menyatakan merasa aktif dan sangat aktif dalam kegiatan akademik maupun non-akademik setelah mengikuti OSADA. Hanya 22% yang merasa tidak mengalami perubahan signifikan. Data ini membuktikan bahwa OSADA berhasil memotivasi mahasiswa untuk lebih berpartisipasi dalam berbagai kegiatan kampus.", key="pie_keaktifan")
 
             if 'angkatan' in df_cat.columns:
                 freq = df_cat.groupby([col_name, 'angkatan']).size().reset_index(name='jumlah')
@@ -653,13 +653,6 @@ elif menu == "🧩 Kesimpulan":
 
         Kegiatan kolaboratif seperti kerja kelompok dan studi kasus dinilai paling efektif dalam mendukung pengembangan diri, sementara tantangan akademik yang seimbang berhasil mempertahankan motivasi belajar mahasiswa.
         """)
-    elif kesimpulan_choice == "💡 Rekomendasi":
-        st.header("💡 Rekomendasi")
-        st.markdown("""
-        Untuk mengoptimalkan dampak OSADA ke depannya, disarankan untuk memperbanyak kegiatan berbasis kolaborasi seperti diskusi kelompok dan proyek tim yang telah terbukti efektif. Tingkat kesulitan tugas yang seimbang perlu dipertahankan karena berhasil menciptakan tantangan yang memotivasi tanpa membuat mahasiswa kewalahan.
-
-        Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
-        """)
     elif kesimpulan_choice == "🎯 Implikasi":
         st.header("🎯 Implikasi")
         st.markdown("""
@@ -667,6 +660,14 @@ elif menu == "🧩 Kesimpulan":
 
         Keaktifan organisasi yang tumbuh pasca-OSADA memperkaya pengalaman mahasiswa di luar ruang kuliah, menciptakan lulusan yang lebih seimbang antara hard skills dan soft skills. Transformasi yang terjadi membuktikan bahwa program orientasi yang terstruktur dengan baik dapat menjadi investasi jangka panjang dalam membentuk karakter dan kompetensi mahasiswa.
         """)
+    elif kesimpulan_choice == "💡 Rekomendasi":
+        st.header("💡 Rekomendasi")
+        st.markdown("""
+        Untuk mengoptimalkan dampak OSADA ke depannya, disarankan untuk memperbanyak kegiatan berbasis kolaborasi seperti diskusi kelompok dan proyek tim yang telah terbukti efektif. Tingkat kesulitan tugas yang seimbang perlu dipertahankan karena berhasil menciptakan tantangan yang memotivasi tanpa membuat mahasiswa kewalahan.
+
+        Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
+        """)
+
 
 
 

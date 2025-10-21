@@ -274,54 +274,6 @@ if menu == "🚀 Overview Data":
     Secara keseluruhan, OSADA berhasil menciptakan transformasi melalui pembentukan kebiasaan disiplin, peningkatan kepercayaan diri, dan penguatan komitmen mahasiswa—menjadikannya fondasi yang kokoh untuk kesuksesan akademik dan pengembangan diri selama masa studi.
     """)
 
-        # Kotak berwarna persentase (card style)
-st.markdown("""
-<div style="display:flex; gap:20px; flex-wrap:wrap;">
-
-    <div style="
-        background-color:#0096C7;
-        flex:1;
-        min-width:250px;
-        padding:16px;
-        border-radius:16px;
-        text-align:center;
-        color:white;
-        font-weight:bold;
-        box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        💪 Disiplin Meningkat<br>
-        <span style='font-size:28px;'>85%</span>
-    </div>
-
-    <div style="
-        background-color:#00B4D8;
-        flex:1;
-        min-width:250px;
-        padding:16px;
-        border-radius:16px;
-        text-align:center;
-        color:white;
-        font-weight:bold;
-        box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        🔥 Keaktifan Naik<br>
-        <span style='font-size:28px;'>78%</span>
-    </div>
-
-    <div style="
-        background-color:#48CAE4;
-        flex:1;
-        min-width:250px;
-        padding:16px;
-        border-radius:16px;
-        text-align:center;
-        color:white;
-        font-weight:bold;
-        box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-        📈 Pengembangan Diri<br>
-        <span style='font-size:28px;'>82%</span>
-    </div>
-</div>
-    """, unsafe_allow_html=True)
-    
     col1, col2 = st.columns(2)
     with col1:
         st.metric("Responden Merasa Lebih Disiplin", "85%")
@@ -716,6 +668,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 

@@ -225,7 +225,7 @@ if menu == "🧩 Kesimpulan":
     with st.sidebar.expander("🧩 Pilih Bagian Kesimpulan", expanded=True):
         kesimpulan_choice = st.radio(
             "Bagian Kesimpulan:",
-            ["📋 Ringkasan Temuan", "💡 Rekomendasi", "🎯 Implikasi"]
+            ["📋 Ringkasan Temuan", "🎯 Implikasi", "💡 Rekomendasi"]
         )
 else:
     kesimpulan_choice = None
@@ -668,6 +668,7 @@ elif menu == "🧩 Kesimpulan":
 
         Integrasi yang lebih erat dengan kegiatan organisasi kampus lainnya dapat memperkuat dampak keaktifan mahasiswa pasca-OSADA. Selain itu, penyediaan kesempatan presentasi yang lebih banyak akan membantu membangun kepercayaan diri dan kemampuan komunikasi mahasiswa. Pengembangan mekanisme untuk memfasilitasi perluasan jaringan pertemanan juga direkomendasikan untuk mendukung keaktifan berkelanjutan.
         """)
+
 
 
 
